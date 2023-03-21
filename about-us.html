@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Learn more about our company and our commitment to quality and sustainability.">
+	<meta name="keywords" content="about us, company, sustainability, quality">
+	<title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="logo">
+            <img src="files\tua-logo-small.png" alt="Logo">
+          </div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#"><a href="about-us.html">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <button onclick="changeLanguage('en')">English</button>
+<button onclick="changeLanguage('mi')">Te reo Māori</button>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <script>
+    const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+hamburger.classList.toggle('active');
+menu.classList.toggle('active');
+});
+    </script>
+  </nav>
+  <div class="internal-header">
+    <h1>About Us</h1>
+  </div>
+</header>
+
+	
+	<main>
+        <p>Hine/Tāne was developed by Te Whatu Ora- Health Promotion Agency. Chatbot technology is a new area in the stop smoking space and has the potential to be a new way to contribute towards the government’s goal of a Smokefree Aotearoa by 2025, because different approaches are needed to eliminate inequities in smoking rates and smoking-related illnesses.</p>
+        <p>Hine/Tāne (formerly Kuīni) was launched in October 2021 and was created with funding from Te Whatu Ora – Health Promotion and the Quit Group. We mihi to all those who created and upheld this kaupapa, including: IDIA, Takiri Mai Te Ata Whanau Ora Community Trust, Hāpai te Hauora, Catherine Manning,Coco Solid, Xoë Hall, Papakura Marae Health Centre, Dr John McMenamin, Luther Ashford, Sue Taylor and the ‘tradies’ and wāhine who signed up to trial the original chatbots.</p>
+	</main>
+	
+	<footer>
+
+	</footer>
+</body>
+</html>
