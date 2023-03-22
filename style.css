@@ -1,16 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Roboto+Condensed&display=swap');
+@font-face {
 
+  font-family: body-font;
+
+  src: url(fonts/Figtree-Regular.ttf);
+
+}
+
+@font-face {
+
+  font-family: heading-font;
+
+  src: url(fonts/Figtree-Bold.ttf);
+
+}
+section {
+  max-width: 1200px;
+  margin: auto;
+}
 h1 {
-  font-family: 'Manrope';
+  font-family: 'heading-font';
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #fff;
+  /* text-transform: uppercase; */
 }
 
-p {
-  font-family: 'Roboto Condensed';
+p, ul {
+  font-family: 'body-font';
   color: #fff;
+  font-size: 18px;
 }
+
+
 img {
   display: block;
   max-width: 100%;
@@ -85,10 +106,11 @@ main {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-family: 'Roboto Condensed';
+    font-family: 'body-font';
     border: 2px solid;
     margin-left: 5px;
     margin-right: 5px;
+    text-decoration: none;
   }
   .background-image {
     position: relative;
@@ -103,12 +125,26 @@ main {
     background-color: #ffffff4d; /* Change this to the desired hover background color */
     color: #333;
   }
-  
-  .logo {
-    /* font-size: 2rem; */
-    /* font-weight: bold; */
+  .btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'body-font';
+    border: 2px solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffffff4d;
+    color: #333;
+}
+  a.btn {
+    text-decoration: none;
   }
-  
   .menu {
     display: flex;
     list-style: none;
@@ -127,7 +163,7 @@ main {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    font-family: 'Roboto Condensed';
+    font-family: 'body-font';
   }
 
   
@@ -136,8 +172,9 @@ main {
     align-items: center;
   }
   .body-overlay {
-    background: url(https://www.hapai.co.nz/sites/default/files/tri-background.png);
-    background-size: contain;
+    background: url(https://hapai.co.nz/sites/default/files/tri-background-long.png);
+    background-size: cover;
+    background-repeat: no-repeat\9;
     background-repeat-x: no-repeat;
     background-repeat-y: repeat;
 }
@@ -202,3 +239,7 @@ main {
       transform: translateY(-8px) rotate(-45deg);
     }
   }
+
+  .tua-sc-1 {
+    margin-top: 150px;
+}
