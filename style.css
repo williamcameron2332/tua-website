@@ -79,12 +79,12 @@ main {
 
   .hero-row {
     display: flex;
-    height: 55vh;
+    height: 49vh;
     align-items: center;
     justify-content: center;
   }
   .hero-col {
-    flex-basis: 400px;
+    flex-basis: 1000px;
     text-align: center;
 }
 .hero-col p {
@@ -173,10 +173,15 @@ main {
   }
   .body-overlay {
     background: url(https://hapai.co.nz/sites/default/files/tri-background-db.png);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat\9;
     background-repeat-x: no-repeat;
     background-repeat-y: repeat;
+}
+
+.hero-col img {
+  max-width: 400px;
+  margin: auto;
 }
   .logo img {
 
